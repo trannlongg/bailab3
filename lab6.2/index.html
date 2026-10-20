@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6.2 - CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Thanh điều hướng -->
+    <nav class="navbar">
+        <a href="#" class="logo">MY WEBSITE</a>
+
+        <div class="nav-menu">
+            <a href="#home">Trang chủ</a>
+            <a href="#features">Dịch vụ</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#contact">Liên hệ</a>
+        </div>
+    </nav>
+
+    <!-- Phần giới thiệu đầu trang -->
+    <header id="home" class="header">
+        <p class="subtitle">CHÀO MỪNG BẠN ĐẾN VỚI WEBSITE</p>
+        <h1>Thiết kế giao diện bằng CSS Grid</h1>
+        <p>
+            CSS Grid giúp sắp xếp các thành phần trên trang web
+            thành hàng và cột một cách linh hoạt.
+        </p>
+        <a href="#features" class="btn">Khám phá ngay</a>
+    </header>
+
+    <!-- Bài 1: Bố cục Grid 4 cột -->
+    <section id="features" class="section">
+        <div class="section-heading">
+            <h2>Các tính năng nổi bật</h2>
+            <p>Minh họa bố cục gồm bốn cột sử dụng CSS Grid.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-number">01</div>
+                <h3>Thiết kế web</h3>
+                <p>Xây dựng giao diện website rõ ràng, dễ sử dụng.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-number">02</div>
+                <h3>CSS Grid</h3>
+                <p>Sắp xếp nội dung theo hàng và cột thuận tiện.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-number">03</div>
+                <h3>Responsive</h3>
+                <p>Điều chỉnh giao diện phù hợp với nhiều kích thước màn hình.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-number">04</div>
+                <h3>Hiệu quả</h3>
+                <p>Giúp bố cục trang web gọn gàng và dễ quản lý.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bài 1: Bố cục Grid 2 cột -->
+    <section id="about" class="section about-section">
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80"
+                alt="Không gian làm việc lập trình"
+            >
+        </div>
+
+        <div class="about-content">
+            <p class="subtitle">GIỚI THIỆU</p>
+            <h2>Tìm hiểu về CSS Grid</h2>
+            <p>
+                CSS Grid là công cụ bố cục trong CSS cho phép chia
+                giao diện thành các hàng và cột. Nhờ đó, việc sắp xếp
+                nội dung trở nên trực quan và dễ điều chỉnh hơn.
+            </p>
+            <p>
+                Trong bài thực hành này, phần tính năng sử dụng bốn cột
+                và phần giới thiệu sử dụng hai cột có tỷ lệ bằng nhau.
+            </p>
+            <a href="#contact" class="btn">Liên hệ với chúng tôi</a>
+        </div>
+    </section>
+
+    <!-- Liên hệ -->
+    <footer id="contact" class="footer">
+        <h2>MY WEBSITE</h2>
+        <p>Thực hành CSS Grid - Lab 6.2</p>
+        <p>© 2026 - Bài tập thực hành thiết kế web</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6.1 - CSS Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MENU -->
+    <nav class="navbar">
+        <div class="logo">MY WEBSITE</div>
+
+        <div class="nav-menu">
+            <a href="#home">Trang chủ</a>
+            <a href="#features">Tính năng</a>
+            <a href="#about">Giới thiệu</a>
+        </div>
+    </nav>
+
+    <!-- BÀI 1 - MÀN HÌNH 1 -->
+    <header class="header" id="home">
+        <div class="header-content">
+            <p class="header-subtitle">CHÀO MỪNG BẠN</p>
+
+            <h1>Khám phá thế giới sáng tạo</h1>
+
+            <p class="header-description">
+                Một giao diện hiện đại được xây dựng bằng HTML và CSS Flexbox.
+            </p>
+
+            <a href="#features" class="header-button">
+                Khám phá ngay
+            </a>
+        </div>
+    </header>
+
+    <!-- BÀI 1 - MÀN HÌNH 2 -->
+    <section class="features" id="features">
+        <div class="section-heading">
+            <p class="section-subtitle">TÍNH NĂNG</p>
+            <h2>Những điều nổi bật</h2>
+            <p>Giao diện sử dụng Flexbox để sắp xếp các thành phần.</p>
+        </div>
+
+        <div class="feature-list">
+            <div class="feature_item">
+                <div class="feature-icon">01</div>
+                <h3>Thiết kế hiện đại</h3>
+                <p>
+                    Bố cục rõ ràng, dễ quan sát và sử dụng.
+                </p>
+            </div>
+
+            <div class="feature_item">
+                <div class="feature-icon">02</div>
+                <h3>Dễ dàng sử dụng</h3>
+                <p>
+                    Nội dung được sắp xếp hợp lý, thuận tiện cho người dùng.
+                </p>
+            </div>
+
+            <div class="feature_item">
+                <div class="feature-icon">03</div>
+                <h3>Tương thích thiết bị</h3>
+                <p>
+                    Giao diện tự điều chỉnh phù hợp với màn hình nhỏ.
+                </p>
+            </div>
+
+            <div class="feature_item">
+                <div class="feature-icon">04</div>
+                <h3>Hiệu ứng mượt mà</h3>
+                <p>
+                    Các thẻ có hiệu ứng chuyển động khi rê chuột.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GIỚI THIỆU -->
+    <section class="about" id="about">
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80"
+                alt="Không gian làm việc"
+            >
+        </div>
+
+        <div class="about-content">
+            <p class="section-subtitle">GIỚI THIỆU</p>
+            <h2>Học tập và phát triển mỗi ngày</h2>
+
+            <p>
+                Flexbox là công cụ CSS giúp sắp xếp các phần tử
+                theo hàng hoặc cột một cách linh hoạt.
+            </p>
+
+            <a href="#home" class="about-button">Quay lại đầu trang</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>LAB 6.1 - THỰC HÀNH CSS FLEXBOX</p>
+    </footer>
+
+</body>
+</html>

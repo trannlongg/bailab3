@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5.2 - CSS Animation và Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BÀI 1: MENU -->
+    <nav class="nav">
+        <div class="nav__logo">MY WEBSITE</div>
+
+        <div class="nav__menu">
+            <a href="#home" class="nav__link">Trang chủ</a>
+            <a href="#about" class="nav__link">Giới thiệu</a>
+            <a href="#features" class="nav__link">Dịch vụ</a>
+            <a href="#contact" class="nav__link">Liên hệ</a>
+        </div>
+    </nav>
+
+    <!-- MÀN HÌNH 2: ANIMATION -->
+    <header class="header" id="home">
+        <div class="header__content">
+            <p class="heading_first heading_first--animation">
+                CHÀO MỪNG BẠN ĐẾN VỚI WEBSITE
+            </p>
+
+            <h1 class="heading_primary">
+                Khám phá những điều mới mẻ
+            </h1>
+
+            <p class="header__description">
+                Học tập, sáng tạo và phát triển mỗi ngày.
+            </p>
+
+            <a href="#about" class="header__btn">
+                KHÁM PHÁ NGAY
+            </a>
+        </div>
+    </header>
+
+    <!-- MÀN HÌNH 3: HÌNH ẢNH VÀ TRANSITION -->
+    <section class="about" id="about">
+        <div class="about_left">
+            <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80"
+                alt="Không gian làm việc"
+                class="about__img"
+            >
+        </div>
+
+        <div class="about_right">
+            <p class="section-subtitle">VỀ CHÚNG TÔI</p>
+            <h2>Không ngừng học hỏi và sáng tạo</h2>
+
+            <p>
+                Chúng tôi hướng đến việc xây dựng những trải nghiệm
+                đơn giản, hiện đại và hữu ích cho mọi người.
+            </p>
+
+            <p>
+                Hãy cùng khám phá các tính năng và tìm hiểu thêm
+                về những giá trị mà chúng tôi mang lại.
+            </p>
+
+            <a href="#features" class="about__btn">Tìm hiểu thêm</a>
+        </div>
+    </section>
+
+    <!-- BÀI 2: CSS FLEXBOX -->
+    <section class="features" id="features">
+        <div class="section-heading">
+            <p class="section-subtitle">CÁC TÍNH NĂNG</p>
+            <h2>Chúng tôi mang đến điều gì?</h2>
+            <p>Giao diện được sắp xếp bằng CSS Flexbox.</p>
+        </div>
+
+        <div class="feature-list">
+            <div class="feature_item">
+                <div class="feature-icon">01</div>
+                <h3>Thiết kế hiện đại</h3>
+                <p>
+                    Giao diện rõ ràng, dễ sử dụng và phù hợp
+                    với nhiều kích thước màn hình.
+                </p>
+            </div>
+
+            <div class="feature_item">
+                <div class="feature-icon">02</div>
+                <h3>Hiệu ứng mượt mà</h3>
+                <p>
+                    Sử dụng transition, transform và animation
+                    để tạo chuyển động sinh động.
+                </p>
+            </div>
+
+            <div class="feature_item">
+                <div class="feature-icon">03</div>
+                <h3>Trải nghiệm tốt</h3>
+                <p>
+                    Bố cục hợp lý giúp người dùng dễ dàng
+                    theo dõi và tìm kiếm nội dung.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIÊN HỆ -->
+    <section class="contact" id="contact">
+        <h2>Bạn đã sẵn sàng chưa?</h2>
+        <p>Hãy bắt đầu khám phá website ngay hôm nay.</p>
+        <a href="#home" class="contact__btn">Quay lại đầu trang</a>
+    </section>
+
+    <footer class="footer">
+        <p>LAB 5.2 - CSS Transform, Transition, Animation và Flexbox</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5.1 - CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-button">
+        <span class="icon-open">☰</span>
+        <span class="icon-close">✕</span>
+    </label>
+
+    <nav class="side-menu">
+        <h2>MENU</h2>
+        <a href="#bai1">Bài 1 - Display</a>
+        <a href="#bai2">Bài 2 - Position</a>
+        <a href="#bai3">Bài 3 - Menu</a>
+    </nav>
+
+    <header class="page-header">
+        <h1>LAB 5.1: CSS – TIẾP THEO</h1>
+        <p>Thực hành Display và Position</p>
+    </header>
+
+    <main>
+        <section id="bai1" class="section">
+            <h2>Bài 1: Ứng dụng Display</h2>
+            <p>Ví dụ về block, inline, inline-block và none.</p>
+
+            <div class="display-demo">
+                <div class="display-card block-example">
+                    <strong>display: block</strong>
+                    <span>Phần tử chiếm cả một dòng.</span>
+                </div>
+
+                <div class="inline-example">
+                    <span class="inline-item">Inline 1</span>
+                    <span class="inline-item">Inline 2</span>
+                    <span class="inline-item">Inline 3</span>
+                </div>
+
+                <div class="inline-block-example">
+                    <span class="inline-block-item">Inline-block 1</span>
+                    <span class="inline-block-item">Inline-block 2</span>
+                    <span class="inline-block-item">Inline-block 3</span>
+                </div>
+
+                <div class="display-card">
+                    <strong>display: none</strong>
+                    <span>Phần tử có display: none sẽ không hiển thị.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="bai2" class="section">
+            <h2>Bài 2: Ứng dụng Position</h2>
+            <p>Ví dụ về relative, absolute, fixed và sticky.</p>
+
+            <div class="position-stage">
+                <div class="position-relative">
+                    <strong>Khung position: relative</strong>
+                    <div class="position-absolute">absolute</div>
+                    <p>Phần tử absolute được định vị theo khung cha.</p>
+                </div>
+            </div>
+
+            <div class="position-notes">
+                <div class="note-card">
+                    <strong>Fixed</strong>
+                    <p>Nút menu cố định khi cuộn trang.</p>
+                </div>
+
+                <div class="note-card">
+                    <strong>Sticky</strong>
+                    <p>Thanh tiêu đề bám ở đầu vùng hiển thị.</p>
+                </div>
+            </div>
+
+            <div class="sticky-demo">
+                Ví dụ position: sticky
+            </div>
+
+            <div class="scroll-space">
+                Cuộn trang để quan sát.
+            </div>
+        </section>
+
+        <section id="bai3" class="section">
+            <h2>Bài 3: Tạo menu bằng Display hoặc Position</h2>
+            <p>Di chuột vào Danh mục để hiển thị menu con.</p>
+
+            <div class="dropdown">
+                <button class="dropdown-button" type="button">
+                    Danh mục ▾
+                </button>
+
+                <div class="dropdown-content">
+                    <a href="#bai1">Trang chủ</a>
+                    <a href="#bai2">Giới thiệu</a>
+                    <a href="#bai3">Sản phẩm</a>
+                    <a href="#footer">Liên hệ</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>Hoàn thành Lab 5.1 - CSS Display & Position</p>
+    </footer>
+
+</body>
+</html>
